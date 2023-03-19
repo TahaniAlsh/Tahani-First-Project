@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root {
+    --main-color: #fff;
+    --color-dark: #1D2231;
+    --text-grey: #FF375E;
+}
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+ }
+/* all things in left */
+ .sidebar{
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background: var(--main-color);
+    left:0;
+    top: 0;
+    z-index:100;
+ }
+ /* maybe i should to delete the lines below */
+ /* .sidebar-brand{
+    height: 100px;
+    padding:6rem 2rem 8rem 10rem;
+    color:#fff;
+} */
+/* the space*/
+.sidebar-brand span{
+    display:inline-block;
+    padding-right: 1rem;
+}
+
+.sidebar-menu{
+    margin-top: 0.3rem;
+}
+
+/* the space between fron(project...etc) */
+.sidebar-menu li {
+    margin-bottom: 0.7rem;
+    padding-left: 0.1rem;
+    width:100%
+}
+/* size font and color  */
+.sidebar-menu a {
+    /* the space between icon and start of page */
+    padding-left:0.8rem;
+display: block;
+font-size: 0.9rem;
+color:#8E9AA0
+}
+
+/* active the ticket managements to change the hilight and color font */
+.sidebar-menu a.active{
+background:#F4F4F4;
+padding-top:0.3rem;
+padding-bottom: 0.3rem;
+color:#FF375E;
+/* the line after words */
+border-right: 4px solid var(--text-grey)
+}
+/* size,space the icomns */
+.sidebar-menu a span:first-child{
+    font-size:1.2rem;
+    padding-right:0.1rem;
+}
+/* the volor for active ticket */
+/*li:hover{
+}*/
+
+ /* aside .sidebar a.active:before{
+    content:'';
+    width: 6px;
+    height:100%;
+    color:#FF375E;
+    background:var(--color-dark)
+} */
+/* the start line  */
+ .main-content{
+    margin-left:199px;
+ }
+
+
+/* header label span{
+} */
+
+header{
+    display: flex;
+    justify-content:space-between;
+    /* justify-content:center; */
+   padding:1.3rem;
+box-shadow: 1px 1px 1px 1px rgba(0,0,0,0);
+position:fixed;
+left: 345;
+width:calc(100%-345px);
+top:0;
+z-index:0;
+border-left: 2px solid #F4F4F4;
+}
+
+/* Style for icons field */
+.search-wrapper{
+border:1px solid #F4F4F4;
+/* border-radius:50%; */
+/* height:50%; */
+/* padding-inline-start:0%; */
+display:flex;
+align-items:center;
+background-color:#F4F4F4;
+}
+/* the sapce between search and icon */
+.search-wrapper span{
+    display: inline-block;
+    padding:0rem 0.2rem;
+    font-size:1.1rem;
+    color:#8E9AA0;
+}
+
+/* Style for search field */
+.search-wrapper input{
+    height:100%;
+    /* for higlight size */
+    padding:0rem;
+    border:none;
+    outline:none;
+background-color:#F4F4F4;
+}
+.notification-wrapper span{
+    display: inline;
+    font-size:1.4rem;
+    color:#8E9AA0;
+    /* padding-left: 600px; */
+    margin-left:40rem;
+    align-items: center;
+}
+/* the icon for admin in header */
+ .Admin-wrapper span{
+    display: inline;
+    font-size:1.4rem;
+    color:#8E9AA0;
+    align-items: center;
+
+}
+/* for profile admin */
+.Admintext-wrapper{
+    display: inline;
+    font-size:0.9rem;
+    color:#1D252D;
+    justify-content: center;
+    align-items: center;
+    margin-left:0.3rem;
+}
+
+main{
+    margin-top: 60px;
+    padding: 1rem 1rem;
+    background:#F4F4F4;
+    min-height: calce(100vn - 90px);
+}
+.myskills{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:2rem;
+    font-size:0.7rem;
+}
+
+/* control the my skills board */
+.myskills{
+    position:relative;
+    height: 120px;
+    display:flex;
+    justify-content:space-between;
+    background: #fff;
+    border-radius: 5px;
+    padding-top: 20px;
+    margin: 20px 0 20px 0;
+    /* border-left: 7px solid #1D2231; */
+}
+/* the color for rew customer */
+.myskills span:first-child{
+    color:#4F008C;
+}
+
+.myskills span:first-child{
+    font-size: 0.3rem;
+}
+
+
+/* color for my skills */
+.myskills h2{
+    padding-inline-start: 10px;
+    color: #4F008C;
+    font-size: 1.2rem;
+    margin-top: -14px;
+}
+/* for new customer style */
+.NewCustomers h1{
+    font-size: 1.6rem;
+    color: #4F008C;
+    text-align: left;
+    padding-top: 18px;
+    padding-right: 150px;
+}
+.NewCustomerspic span1 {
+    display: inline-flex;
+    height: 45px;
+    width: 45px;
+    justify-content:space-between;
+    background:#F4F4F4;
+    border-radius: 50%;
+    margin-top: 22px;  
+    margin-right: -40px; 
+}
+
+.NewCustomerspic span1 {
+    display: flex;
+    padding-top:0.3rem;
+    padding-left:0.2rem;
+    font-size: 2.4rem;
+    color: #FFDD40;
+}
+
+
+/* the new number */
+.NewNumberspic span2 {
+    display: inline-flex;
+    height: 45px;
+    width: 45px;
+    justify-content:space-between;
+    background:#F4F4F4;
+    border-radius: 50%;  
+    margin-top: 22px;  
+    margin-right: -40px;
+}
+
+.NewNumberspic span2 {
+    display: flex;
+    padding-top:0.3rem;
+    padding-left:0.2rem;
+    font-size: 2.4rem;
+    color: #FF6A39;
+}
+
+/* for new number style */
+.NewNumbers h1{
+    font-size: 1.6rem;
+    color: #4F008C;
+    padding-right:150px ;
+    padding-top:16.5px ;
+    text-align: left;
+} 
+
+/* the new number */
+.NewTransferpic span3 {
+    display: inline-flex;
+    height: 45px;
+    width: 45px;
+    justify-content:space-between;
+    background:#F4F4F4;
+    border-radius: 50%;
+    margin-top: 22px;  
+    margin-right: -40px;
+}
+
+.NewTransferpic span3 {
+    display: flex;
+    padding-top:0.3rem;
+    padding-left:0.2rem;
+    font-size: 2.4rem;
+    color: #00C48C;
+}
+
+/* for new transfer style */
+.NewTransfer h1{
+    font-size: 1.6rem;
+    color: #4F008C;
+    padding-right:150px ;
+    padding-top:15px ;
+    text-align: left;
+} 
+
+/* Text first page :)))) */
+.Ticketmanagements-wrapper h3{
+    display:block;
+    color: #1D252D;
+    margin-top:-9.2px;
+}
+.Ticketmanagements-wrapper small{
+    display: inline-block;
+    color: #8E9AA0;
+}
+.recent-grid{
+    margin-top: 1rem;
+    display: grid;
+    /* grid-gap:2rem; */
+    /* grid-template-columns: 0% auto; */
+}
+
+.ticket{
+    background: #fff;
+    border-radius: 5px;
+}
+
+.ticket-header,
+.ticket-body{
+padding: 0.4rem;
+}
+
+.search2-wrapper{
+    border:1px;
+    display:flex;
+    align-items:center;
+    
+    }
+    .search2-wrapper span{
+        display: inline-block;
+        padding:0.3rem;
+        font-size:1.09rem;
+        outline:#F4F4F4;
+        background-color:#F4F4F4;
+        color: #8E9AA0;
+    }
+    .search2-wrapper input{
+        width: 293px;
+        padding:0.3rem;
+        border:none;
+        outline:none;
+        background-color:#F4F4F4;
+        font-size: 0.7rem;
+       margin-inline-start: -6px;
+
+    }
+
+    /* the button style */
+    .search2-wrapper button{
+        background:#72D1B6;
+        font-size: 0.8rem;
+        border:none;
+        padding-inline-start: 10px;
+        margin-left: 3px;
+        border-radius: 2px;
+        outline: none;
+        color: #1D252D;
+        padding-bottom: 0.2rem;
+        padding-top: 0.2rem;
+        align-items:center;
+    }
+
+    /* icon with filter */
+    .search2-wrapper span1{
+        color: #1D252D;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        font-size: 0.3rem;
+        font-weight: 0.2rem;
+    }
+
+    .Next-wrapper span{
+        color: #1D252D;
+        font-size: 1rem;
+        margin-left: 629px;
+        margin-top: -8px;
+        background-color: #fff;
+       
+        }
+
+table{
+    border-collapse:collapse;
+    font-size: 0.8rem;
+}
+
+/* the big title in table */
+thead tr{
+    /* border-top: 1px solid #F4F4F4; */
+    border-bottom: 1px solid #F4F4F4;
+}
+
+tbody tr{
+    /* border-top: 1px solid #F4F4F4; */
+    border-bottom: 1px solid #F4F4F4;
+}
+
+thead td{
+    font-weight:450;
+    color: #8E9AA0;
+}
+
+tbody span5{
+    color: #8E9AA0;
+    font-size: 1.6rem;
+    margin-left: 10px;
+}
+/*space between all rows line */
+td{
+    padding: .2rem 1rem;
+    color: #1D252D;
+}
